@@ -76,7 +76,7 @@ const Authentication = () => {
         {user ? (
           <Routes>
             <Route path="/elda-health-app" element={<HomePage />} />
-            <Route path="products">
+            <Route path="/products">
               <Route index={true} element={<ProductPage />}></Route>
               <Route
                 path="5499"
