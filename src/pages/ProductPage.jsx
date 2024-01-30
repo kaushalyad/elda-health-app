@@ -57,14 +57,14 @@ const ProductPage = () => {
             What you'll get
           </p>
           <div className="mt-2 flex items-center">
-            <img src="/chat.png" alt="chat logo" className="w-4 h-4" />
+            <img src="/elda-health-app/chat.png" alt="chat logo" className="w-4 h-4" />
             <p className="ml-4">
               A chat group on the Elda app where ou can connect with your
               trainer and the rest of the Elda Yoga Community
             </p>
           </div>
           <div className="mt-4 flex items-center">
-            <img src="/clock.png" className="w-4 h-4" alt="clock logo" />
+            <img src="/elda-health-app/clock.png" className="w-4 h-4" alt="clock logo" />
             <p className="ml-4">
               Ability to reschedule your class if you miss your session
             </p>

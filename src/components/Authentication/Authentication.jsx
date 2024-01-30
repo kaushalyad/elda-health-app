@@ -68,7 +68,6 @@ const Authentication = () => {
         setLoading(false);
       });
   }
-
   return (
     <div>
       <div>
