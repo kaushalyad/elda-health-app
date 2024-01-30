@@ -76,7 +76,7 @@ const Authentication = () => {
         <div id="recaptcha-container"></div>
         {user ? (
           <Routes>
-            <Route path="/" element={<HomePage />} />
+            <Route path="/elda-health-app" element={<HomePage />} />
             <Route path="products">
               <Route index={true} element={<ProductPage />}></Route>
               <Route
