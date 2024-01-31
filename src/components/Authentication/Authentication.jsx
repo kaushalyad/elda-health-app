@@ -1,6 +1,5 @@
 import { BsFillShieldLockFill } from "react-icons/bs";
 import { CgSpinner } from "react-icons/cg";
-import { Routes, Route } from "react-router-dom";
 import OtpInput from "otp-input-react";
 import { useState } from "react";
 import PhoneInput from "react-phone-input-2";
@@ -8,9 +7,7 @@ import "react-phone-input-2/lib/style.css";
 import { RecaptchaVerifier, signInWithPhoneNumber } from "firebase/auth";
 import { toast, Toaster } from "react-hot-toast";
 import { auth } from "../../config/firebase";
-import HomePage from "../../pages/HomePage";
-import ProductPage from "../../pages/ProductPage";
-import BatchAndSlot from "../BatchAndSlot";
+import Router from "../../router/Router";
 const Authentication = () => {
   const [otp, setOtp] = useState("");
   const [ph, setPh] = useState("");
@@ -77,43 +74,7 @@ const Authentication = () => {
         <Toaster toastOptions={{ duration: 3000 }} />
         <div id="recaptcha-container"></div>
         {user ? (
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/products">
-              <Route index={true} element={<ProductPage />}></Route>
-              <Route
-                path="5499"
-                exact
-                element={
-                  <BatchAndSlot
-                    actualPrice={12999}
-                    discountedPrice={5499}
-                    monthPlan={6}
-                  />
-                }
-              />
-              <Route
-                path="2999"
-                element={
-                  <BatchAndSlot
-                    actualPrice={5999}
-                    discountedPrice={2999}
-                    monthPlan={3}
-                  />
-                }
-              />
-              <Route
-                path="1199"
-                element={
-                  <BatchAndSlot
-                    actualPrice={1999}
-                    discountedPrice={1199}
-                    monthPlan={1}
-                  />
-                }
-              />
-            </Route>
-          </Routes>
+          <Router />
         ) : (
           <div className=" flex flex-col rounded-lg p-4">
             {showOTP ? (
