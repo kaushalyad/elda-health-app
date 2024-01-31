@@ -17,6 +17,8 @@ const Authentication = () => {
   const [loading, setLoading] = useState(false);
   const [showOTP, setShowOTP] = useState(false);
   const [user, setUser] = useState(null);
+  const [accepted,setAccepted] = useState(false);
+  console.log(accepted);
   function onCaptchVerify() {
     if (!window.recaptchaVerifier) {
       window.recaptchaVerifier = new RecaptchaVerifier(
@@ -68,15 +70,16 @@ const Authentication = () => {
         setLoading(false);
       });
   }
+
   return (
-    <div>
+    <div className="bg-lime-50">
       <div>
-        <Toaster toastOptions={{ duration: 4000 }} />
+        <Toaster toastOptions={{ duration: 3000 }} />
         <div id="recaptcha-container"></div>
         {user ? (
           <Routes>
-            <Route path="/elda-health-app" element={<HomePage />} />
-            <Route path="/products">
+            <Route path="/" element={<HomePage />} />
+            <Route path="products">
               <Route index={true} element={<ProductPage />}></Route>
               <Route
                 path="5499"
@@ -114,7 +117,7 @@ const Authentication = () => {
         ) : (
           <div className=" flex flex-col rounded-lg p-4">
             {showOTP ? (
-              <>
+              <div className="flex-col justify-center text-center items-center">
                 <div className="bg-white text-emerald-500 w-fit mx-auto p-4 rounded-full mt-20">
                   <BsFillShieldLockFill size={50} />
                 </div>
@@ -124,6 +127,7 @@ const Authentication = () => {
                 >
                   Enter your OTP
                 </label>
+                <div className="flex justify-around">
                 <OtpInput
                   value={otp}
                   onChange={setOtp}
@@ -133,25 +137,26 @@ const Authentication = () => {
                   autoFocus
                   className="opt-container mt-10"
                 ></OtpInput>
+                </div>
                 <button
                   onClick={onOTPVerify}
                   className="bg-red-400  flex  items-center justify-center py-3 px-3 mx-auto text-white rounded font-bold text-xl mt-8"
                 >
-                  <div className="w-10 ">
+                  <div className="w-7 ">
                     {loading && (
                       <CgSpinner size={23} className="mt-1 animate-spin" />
                     )}
                   </div>
-                  <span className="pr-10 text-xl">Verify OTP</span>
+                  <span className="pr-5 text-xl">Verify OTP</span>
                 </button>
-              </>
+              </div>
             ) : (
               <>
                 <div className=" w-[100%] h-1/2 mt-20  flex-col ">
                   <div className="h-[25%] text-center flex items-center justify-center">
                     <p className="text-4xl font-bold">Login to your account</p>
                   </div>
-                  <div className="h-[25%] flex items-center justify-center ">
+                  <div className="h-[25%] flex items-center justify-center mt-5 ">
                     <div>
                       <PhoneInput
                         value={ph}
@@ -169,11 +174,12 @@ const Authentication = () => {
                     </div>
                   </div>
                   <div className="h-[25%] flex items-center justify-center">
-                    <div className="flex">
+                    <div className="flex mt-4">
                       <div className="flex items-center">
                         <input
                           type="checkbox"
                           className="size-5 my-auto accent-red-400 hover:accent-red-500"
+                          onChange={(e)=>{setAccepted(e.target.checked)}}
                         ></input>
                       </div>
                       <div>
@@ -189,7 +195,7 @@ const Authentication = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="text-center flex justify-center">
+                  <div className="text-center flex justify-center mt-10">
                     <button
                       className="bg-red-400 rounded-md px-5 py-2 text-white hover:bg-red-500 font-semibold flex text-xl text-center"
                       onClick={onSignup}
