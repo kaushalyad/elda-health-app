@@ -15,7 +15,6 @@ const Authentication = () => {
   const [showOTP, setShowOTP] = useState(false);
   const [user, setUser] = useState(null);
   const [accepted,setAccepted] = useState(false);
-  console.log(accepted);
   function onCaptchVerify() {
     if (!window.recaptchaVerifier) {
       window.recaptchaVerifier = new RecaptchaVerifier(

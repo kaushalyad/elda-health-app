@@ -36,10 +36,10 @@ const HomePage = () => {
           </div>
           <div className="flex justify-between mt-3">
             <div className="flex-col justify-center">
-              <div className="text-center w-10 m-auto">
+              <div className="text-center flex m-auto bg-gray-300 w-16 h-16 rounded-full  justify-center items-center">
                 <img
                   src="/elda-health-app/computer.png"
-                  className="w-10 h-10"
+                  className="w-10 h-10 "
                   alt="computer png"
                 ></img>
               </div>
@@ -53,7 +53,7 @@ const HomePage = () => {
               </div>
             </div>
             <div>
-              <div className="text-center w-10 m-auto">
+              <div className="text-center flex m-auto bg-gray-300 w-16 h-16 rounded-full  justify-center items-center">
                 <img
                   src="/elda-health-app/heart.png"
                   className="w-10 h-10"
@@ -72,7 +72,7 @@ const HomePage = () => {
               </div>
             </div>
             <div>
-              <div className="text-center w-10 m-auto">
+              <div className="text-center flex m-auto bg-gray-300 w-16 h-16 rounded-full  justify-center items-center">
                 <img
                   src="/elda-health-app/run.png"
                   className="w-10 h-10"

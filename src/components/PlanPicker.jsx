@@ -8,7 +8,7 @@ const PlanPicker = ({
   monthPrice,
 }) => {
   return (
-    <div className="bg-white rounded-s-lg mt-3 py-4 px-3">
+    <div className="bg-white rounded-xl mt-3 py-2 px-2">
       <div className="flex justify-between">
         {timePeriod === 1 ? (
           <p className="font-semibold text-xl">{timePeriod} Month</p>
