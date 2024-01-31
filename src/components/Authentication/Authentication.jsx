@@ -14,7 +14,7 @@ const Authentication = () => {
   const [loading, setLoading] = useState(false);
   const [showOTP, setShowOTP] = useState(false);
   const [user, setUser] = useState(null);
-  const [accepted,setAccepted] = useState(false);
+  const [accepted, setAccepted] = useState(false);
   function onCaptchVerify() {
     if (!window.recaptchaVerifier) {
       window.recaptchaVerifier = new RecaptchaVerifier(
@@ -88,26 +88,26 @@ const Authentication = () => {
                   Enter your OTP
                 </label>
                 <div className="flex justify-around">
-                <OtpInput
-                  value={otp}
-                  onChange={setOtp}
-                  OTPLength={6}
-                  otpType="number"
-                  disabled={false}
-                  autoFocus
-                  className="opt-container mt-10"
-                ></OtpInput>
+                  <OtpInput
+                    value={otp}
+                    onChange={setOtp}
+                    OTPLength={6}
+                    otpType="number"
+                    disabled={false}
+                    autoFocus
+                    className="opt-container mt-10"
+                  ></OtpInput>
                 </div>
                 <button
                   onClick={onOTPVerify}
-                  className="bg-red-400  flex  items-center justify-center py-3 px-3 mx-auto text-white rounded font-bold text-xl mt-8"
+                  className="bg-red-400  flex  items-center justify-center py-2 px-3 mx-auto text-white rounded font-semibold text-xl mt-8"
                 >
-                  <div className="w-7 ">
+                  <span className="w-6 ">
                     {loading && (
                       <CgSpinner size={23} className="mt-1 animate-spin" />
                     )}
-                  </div>
-                  <span className="pr-5 text-xl">Verify OTP</span>
+                  </span>
+                  <span className="pr-5  ml-1">Verify OTP</span>
                 </button>
               </div>
             ) : (
@@ -139,7 +139,9 @@ const Authentication = () => {
                         <input
                           type="checkbox"
                           className="size-5 my-auto accent-red-400 hover:accent-red-500"
-                          onChange={(e)=>{setAccepted(e.target.checked)}}
+                          onChange={(e) => {
+                            setAccepted(e.target.checked);
+                          }}
                         ></input>
                       </div>
                       <div>
@@ -150,23 +152,23 @@ const Authentication = () => {
                         <span className="ml-1">&</span>{" "}
                         <span className="ml-1 text-red-400">
                           Privacy Policy
-                        </span>
+                        </span>{" "}
                         <span>of Elda Health</span>
                       </div>
                     </div>
                   </div>
                   <div className="text-center flex justify-center mt-10">
                     <button
-                    disabled={!accepted}
+                      disabled={!accepted}
                       className="bg-red-400 rounded-md px-5 py-2 text-white hover:bg-red-500 font-semibold flex text-xl text-center disabled:cursor-not-allowed disabled:opacity-25"
                       onClick={onSignup}
                     >
                       <span className="w-6">
                         {loading && (
-                          <CgSpinner size={20} className="mt-1 animate-spin" />
+                          <CgSpinner size={23} className="mt-1 animate-spin" />
                         )}
                       </span>
-                      <span className="pr-5">Send OTP</span>
+                      <span className="pr-5 ml-1">Send OTP</span>
                     </button>
                   </div>
                 </div>

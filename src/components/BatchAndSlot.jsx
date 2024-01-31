@@ -50,7 +50,15 @@ const BatchAndSlot = ({ actualPrice, discountedPrice, monthPlan }) => {
             </div>
           </div>
           <p className="mt-1">
-            5 days a week <button className="text-red-400" onClick={()=>{navigate(-1)}}>Change plan</button>
+            5 days a week{" "}
+            <button
+              className="text-red-400"
+              onClick={() => {
+                navigate(-1);
+              }}
+            >
+              Change plan
+            </button>
           </p>
         </div>
         <div>
@@ -88,7 +96,7 @@ const BatchAndSlot = ({ actualPrice, discountedPrice, monthPlan }) => {
             isSelected={selectedTwo}
           ></SlotPicker>
         </form>
-        <button className="bg-red-400 px-4 py-2 font-semibold rounded-full text-white ml-10 mt-3 hover:bg-red-500">
+        <button className="bg-red-400 px-4 py-2 font-semibold rounded-full text-white ml-16 mt-3 hover:bg-red-500">
           BUY PACKAGE
         </button>
       </div>

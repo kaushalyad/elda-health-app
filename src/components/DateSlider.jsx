@@ -96,7 +96,7 @@ const ItemSlider = () => {
     return (
       <div
         className="slick-arrow slick-next"
-        style={{ ...style, backgroundColor: "red" }}
+        style={{ ...style, backgroundColor: "red",paddingTop:"1px",borderRadius:"50%"}}
         onClick={props.onClick}
       ></div>
     );
@@ -107,7 +107,7 @@ const ItemSlider = () => {
     return (
       <div
         className="slick-arrow slick-prev "
-        style={{ ...style, backgroundColor: "red" }}
+        style={{ ...style, backgroundColor: "red",paddingTop:"1px",borderRadius:"50%" }}
         onClick={props.onClick}
       ></div>
     );
