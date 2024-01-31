@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import SlotPicker from "./SlotPicker";
 import ItemSlider from "./DateSlider";
 const BatchAndSlot = ({ actualPrice, discountedPrice, monthPlan }) => {
@@ -96,9 +96,11 @@ const BatchAndSlot = ({ actualPrice, discountedPrice, monthPlan }) => {
             isSelected={selectedTwo}
           ></SlotPicker>
         </form>
-        <button className="bg-red-400 px-4 py-2 font-semibold rounded-full text-white ml-16 mt-3 hover:bg-red-500">
-          BUY PACKAGE
-        </button>
+        <NavLink to={"/products/"+discountedPrice+"/success"}>
+          <button className="bg-red-400 px-4 py-2 font-semibold rounded-full text-white ml-16 mt-3 hover:bg-red-500">
+            BUY PACKAGE
+          </button>
+        </NavLink>
       </div>
     </div>
   );
