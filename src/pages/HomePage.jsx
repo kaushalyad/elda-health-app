@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 const HomePage = () => {
   return (
    
-      <div className="flex-col w-full p-10">
+      <div className="flex-col w-full p-10 bg-white h-screen">
         <div className="flex justify-between mb-5">
           <div>
             <p className="text-green-600 text-xl font-semibold">
