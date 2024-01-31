@@ -140,7 +140,7 @@ const Authentication = () => {
                 </div>
                 <button
                   onClick={onOTPVerify}
-                  className={`"bg-red-400  flex  items-center justify-center py-3 px-3 mx-auto text-white rounded font-bold text-xl mt-8"`}
+                  className="bg-red-400  flex  items-center justify-center py-3 px-3 mx-auto text-white rounded font-bold text-xl mt-8"
                 >
                   <div className="w-7 ">
                     {loading && (

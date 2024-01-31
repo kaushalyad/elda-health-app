@@ -12,7 +12,7 @@ const BatchAndSlot = ({ actualPrice, discountedPrice, monthPlan }) => {
         <div>
           <p className="text-lime-700 text-xl font-semibold">Yoga for Mind</p>
           <img
-            src="/mindyogapic.jpg"
+            src="/elda-health-app/mindyogapic.jpg"
             alt="yoga pic"
             className=" m-auto mt-4 rounded-xl"
           />

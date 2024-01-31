@@ -38,7 +38,7 @@ const HomePage = () => {
             <div className="flex-col justify-center">
               <div className="text-center w-10 m-auto">
                 <img
-                  src="/computer.png"
+                  src="/elda-health-app/computer.png"
                   className="w-10 h-10"
                   alt="computer png"
                 ></img>
@@ -55,7 +55,7 @@ const HomePage = () => {
             <div>
               <div className="text-center w-10 m-auto">
                 <img
-                  src="/heart.png"
+                  src="/elda-health-app/heart.png"
                   className="w-10 h-10"
                   alt="heart pic"
                 ></img>
@@ -74,7 +74,7 @@ const HomePage = () => {
             <div>
               <div className="text-center w-10 m-auto">
                 <img
-                  src="/run.png"
+                  src="/elda-health-app/run.png"
                   className="w-10 h-10"
                   alt="running man pic"
                 ></img>
