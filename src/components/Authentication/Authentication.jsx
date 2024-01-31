@@ -140,7 +140,7 @@ const Authentication = () => {
                 </div>
                 <button
                   onClick={onOTPVerify}
-                  className="bg-red-400  flex  items-center justify-center py-3 px-3 mx-auto text-white rounded font-bold text-xl mt-8"
+                  className={`"bg-red-400  flex  items-center justify-center py-3 px-3 mx-auto text-white rounded font-bold text-xl mt-8"`}
                 >
                   <div className="w-7 ">
                     {loading && (
@@ -197,7 +197,8 @@ const Authentication = () => {
                   </div>
                   <div className="text-center flex justify-center mt-10">
                     <button
-                      className="bg-red-400 rounded-md px-5 py-2 text-white hover:bg-red-500 font-semibold flex text-xl text-center"
+                    disabled={!accepted}
+                      className="bg-red-400 rounded-md px-5 py-2 text-white hover:bg-red-500 font-semibold flex text-xl text-center disabled:cursor-not-allowed disabled:opacity-25"
                       onClick={onSignup}
                     >
                       <span className="w-6">
