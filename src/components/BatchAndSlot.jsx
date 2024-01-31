@@ -1,11 +1,11 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import SlotPicker from "./SlotPicker";
 import ItemSlider from "./DateSlider";
 const BatchAndSlot = ({ actualPrice, discountedPrice, monthPlan }) => {
   const [selectedOne, setSelectedOne] = useState(false);
   const [selectedTwo, setSelectedTwo] = useState(false);
-  console.log(selectedOne);
-  console.log(selectedTwo);
+  const navigate = useNavigate();
   return (
     <div className="flex-col bg-lime-50 p-10">
       <div className="flex-col">
@@ -50,7 +50,7 @@ const BatchAndSlot = ({ actualPrice, discountedPrice, monthPlan }) => {
             </div>
           </div>
           <p className="mt-1">
-            5 days a week <button className="text-red-400">Change plan</button>
+            5 days a week <button className="text-red-400" onClick={()=>{navigate(-1)}}>Change plan</button>
           </p>
         </div>
         <div>
