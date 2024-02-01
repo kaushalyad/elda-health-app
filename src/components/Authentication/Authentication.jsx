@@ -138,7 +138,7 @@ const Authentication = () => {
                       <div className="flex items-center mobile:items-start">
                         <input
                           type="checkbox"
-                          className="size-5 my-auto accent-red-400 hover:accent-red-500 mobile:size-3 mobile:my-2"
+                          className="size-5 my-auto accent-red-400 hover:accent-red-500 mobile:size-4 mobile:my-2"
                           onChange={(e) => {
                             setAccepted(e.target.checked);
                           }}
