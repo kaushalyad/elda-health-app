@@ -22,7 +22,7 @@ const Router = () => {
                 />
               }
             />
-            <Route path="success" element={<SuccessMessage />} />
+            <Route path="success" element={<SuccessMessage timePeriod={6}/>} />
           </Route>
           <Route path="2999">
             <Route
@@ -35,7 +35,7 @@ const Router = () => {
                 />
               }
             />
-            <Route path="success" element={<SuccessMessage />} />
+            <Route path="success" element={<SuccessMessage timePeriod={3} />} />
           </Route>
           <Route path="1199">
             <Route
@@ -48,7 +48,7 @@ const Router = () => {
                 />
               }
             />
-            <Route path="success" element={<SuccessMessage />} />
+            <Route path="success" element={<SuccessMessage timePeriod={1}/>} />
           </Route>
         </Route>
       </Routes>
