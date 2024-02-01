@@ -114,7 +114,7 @@ const Authentication = () => {
               <>
                 <div className=" w-[100%] h-1/2 mt-20  flex-col ">
                   <div className="h-[25%] text-center flex items-center justify-center">
-                    <p className="text-4xl font-bold">Login to your account</p>
+                    <p className="text-4xl font-bold mobile:text-2xl">Login to your account</p>
                   </div>
                   <div className="h-[25%] flex items-center justify-center mt-5 ">
                     <div>
@@ -133,19 +133,19 @@ const Authentication = () => {
                       />
                     </div>
                   </div>
-                  <div className="h-[25%] flex items-center justify-center">
-                    <div className="flex mt-4">
-                      <div className="flex items-center">
+                  <div className="h-[25%] flex items-center justify-center mobile:items-start">
+                    <div className="flex mt-4 ">
+                      <div className="flex items-center mobile:items-start">
                         <input
                           type="checkbox"
-                          className="size-5 my-auto accent-red-400 hover:accent-red-500"
+                          className="size-5 my-auto accent-red-400 hover:accent-red-500 mobile:size-3 mobile:my-2"
                           onChange={(e) => {
                             setAccepted(e.target.checked);
                           }}
                         ></input>
                       </div>
-                      <div>
-                        <span className="ml-10">I agree with the</span>{" "}
+                      <div className="mobile:text-sm ml-10 mobile:ml-4">
+                        <span className="">I agree with the</span>{" "}
                         <span className="ml-1 text-red-400">
                           Terms & Conditions{" "}
                         </span>

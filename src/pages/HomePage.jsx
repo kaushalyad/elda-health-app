@@ -3,13 +3,13 @@ import { NavLink } from "react-router-dom";
 const HomePage = () => {
   return (
    
-      <div className="flex-col w-full p-10 bg-white h-screen">
-        <div className="flex justify-between mb-5">
+      <div className="flex-col w-full p-10 bg-white h-screen mobile:p-2 mobile:h-full tablet:p-4 tablet:h-full biggerTablet:h-full">
+        <div className="flex justify-between mb-5 mobile:flex-col mobile:justify-center mobile:items-center tablet:flex-col tablet:justify-center tablet:items-center">
           <div>
-            <p className="text-green-600 text-xl font-semibold">
+            <p className="text-green-600 text-xl font-semibold mobile:text-lg">
               Yoga for Mind
             </p>
-            <p className="mt-3">
+            <p className="mt-3 mobile:mt-1 mobile:mb-6 mobile:font-semibold mobile:text-sm tablet:mb-8 tablet:font-semibold tablet:text-sm">
               Watch Out Lead Yoga Therapist
               <a href="google.com" className="underline ml-1 text-red-500">
                 Ms Uma Subramaniam
@@ -19,9 +19,7 @@ const HomePage = () => {
           </div>
           <div className=" rounded-lg">
             <iframe
-              className="rounded-lg"
-              width="560"
-              height="315"
+              className="rounded-lg w-[560px] h-[315px] mobile:w-[290px] mobile:h-[160px] tablet:w-[450px] tablet:h-[220px] biggerTablet:w-[420px] biggerTablet:h-[230px]"
               src="https://www.youtube.com/embed/v7SN-d4qXx0?si=ExbqKreSfZJ7eIbX"
               title="YouTube video player"
               frameborder="0"
@@ -32,9 +30,9 @@ const HomePage = () => {
         </div>
         <div>
           <div>
-            <p className="text-green-600">Is this for you?</p>
+            <p className="text-green-600 font-semibold mobile:text-sm">Is this for you?</p>
           </div>
-          <div className="flex justify-between mt-3">
+          <div className="flex justify-between mt-3 mobile:flex-col mobile:gap-6 tablet:flex-col tablet:gap-10 biggerTablet:flex-col biggerTablet:gap-14">
             <div className="flex-col justify-center">
               <div className="text-center flex m-auto bg-gray-300 w-16 h-16 rounded-full  justify-center items-center">
                 <img

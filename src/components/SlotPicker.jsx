@@ -5,7 +5,7 @@ const SlotPicker = ({ startTime, endTime, isSelected, onClick }) => {
       <div className="flex-col w-[98%] mt-3 bg-white rounded-2xl p-2 ml-3 py-4 border-green-500 border-[1px]">
         <div className="flex items-center">
           <img src="/elda-health-app/clock.png" className="w-4 h-4" alt="" />
-          <div className="ml-2 font-semibold">
+          <div className="ml-2 font-semibold mobile:text-sm">
             {startTime}-{endTime}
           </div>
         </div>

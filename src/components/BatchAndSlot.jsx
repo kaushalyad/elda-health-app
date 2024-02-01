@@ -7,10 +7,10 @@ const BatchAndSlot = ({ actualPrice, discountedPrice, monthPlan }) => {
   const [selectedTwo, setSelectedTwo] = useState(false);
   const navigate = useNavigate();
   return (
-    <div className="flex-col bg-lime-50 p-10">
+    <div className="flex-col bg-lime-50 p-10 mobile:p-5">
       <div className="flex-col">
         <div>
-          <p className="text-lime-700 text-xl font-semibold">Yoga for Mind</p>
+          <p className="text-lime-700 text-xl font-semibold mobile:text-lg">Yoga for Mind</p>
           <img
             src="/elda-health-app/mindyogapic.jpg"
             alt="yoga pic"
@@ -18,16 +18,16 @@ const BatchAndSlot = ({ actualPrice, discountedPrice, monthPlan }) => {
           />
         </div>
         <div>
-          <p className="text-lime-700 text-xl font-semibold mt-3">
+          <p className="text-lime-700 text-xl font-semibold mt-3 mobile:text-lg">
             What is Yoga for Mind?
           </p>
-          <p className="mt-2 text-gray-500 text-semibold">
+          <p className="mt-2 text-gray-600 font-semibold mobile:text-sm">
             The Yoga for Mind sessions involve minimal physical movement and
             relies on techniques such as pranayama and meditation, Suited for
             women who cannot perform more physical forms of Yoga and are looking
             for relief from concerns such as stress,anxiety,low mood etc.
           </p>
-          <p className="mt-2 text-xs">
+          <p className="mt-2 text-xs font-thin">
             Yoga {">"} Yoga for Mind {">"} Package
           </p>
         </div>
@@ -35,11 +35,11 @@ const BatchAndSlot = ({ actualPrice, discountedPrice, monthPlan }) => {
       <div>
         <div>
           <div className="flex justify-between">
-            <p className="text-lime-700 text-xl mt-4 font-semibold">
+            <p className="text-lime-700 text-xl mt-4 font-semibold mobile:text-lg">
               {monthPlan} Month Yoga for Mind
             </p>
             <div>
-              <div className="flex text-green-600 font-semibold text-xl">
+              <div className="flex text-green-600 font-semibold text-xl mobile:text-lg">
                 <p>&#8377;</p>
                 <p>{discountedPrice}</p>
               </div>
@@ -62,10 +62,10 @@ const BatchAndSlot = ({ actualPrice, discountedPrice, monthPlan }) => {
           </p>
         </div>
         <div>
-          <p className="text-lime-700 text-lg mt-3 font-semibold">
+          <p className="text-lime-700 text-lg mt-3 font-semibold mobile:text-base">
             Pick a start date
           </p>
-          <p className=" mt-1 mb-6">
+          <p className=" mt-1 mb-6 mobile:text-sm">
             Dates are available only for the next 2 weeks
           </p>
 
@@ -73,7 +73,7 @@ const BatchAndSlot = ({ actualPrice, discountedPrice, monthPlan }) => {
         </div>
       </div>
       <div>
-        <p className="text-lime-700 text-lg mt-3 font-semibold">
+        <p className="text-lime-700 text-lg mt-3 font-semibold mobile:text-base">
           Select Time Slot
         </p>
         <form>

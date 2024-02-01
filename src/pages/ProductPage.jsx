@@ -2,10 +2,10 @@ import React from "react";
 import PlanPicker from "../components/PlanPicker";
 const ProductPage = () => {
   return (
-    <div className="flex p-6 bg-lime-50">
-      <div className="w-1/2 p-10">
+    <div className="flex p-6 bg-lime-50 mobile:flex-col mobile:p-3 tablet:p-3 tablet:flex-col">
+      <div className="w-1/2 p-10 mobile:w-full mobile:p-0 tablet:p-0 tablet:w-full">
         <div>
-          <p className="text-lime-700 text-xl font-semibold" l>
+          <p className="text-lime-700 text-xl font-semibold mobile:text-lg " >
             Yoga for Mind
           </p>
           <img
@@ -15,11 +15,11 @@ const ProductPage = () => {
           />
         </div>
         <div>
-          <p className="text-lime-700 text-xl mt-2 font-semibold">
+          <p className="text-lime-700 text-xl mt-2 font-semibold mobile:text-lg">
             {" "}
             What is Yoga for Mind{" "}
           </p>
-          <p className="mt-2 text-gray-600 text-semibold">
+          <p className="mt-2 text-gray-600 font-semibold mobile:text-sm">
             The Yoga for Mind sessions involve minimal physical movement and
             relies on techniques such as pranayama and meditation. Suited for
             women who cannot perform more physical forms of yoga and are looking
@@ -27,9 +27,9 @@ const ProductPage = () => {
           </p>
         </div>
       </div>
-      <div className="w-1/2 p-10">
+      <div className="w-1/2 p-10 mobile:w-full mobile:p-0 tablet:w-full tablet:p-0">
         <div>
-          <p className="text-lime-700 text-xl font-semibold">
+          <p className="text-lime-700 text-xl font-semibold mobile:text-lg">
             Choose your package
           </p>
           <PlanPicker
@@ -53,7 +53,7 @@ const ProductPage = () => {
         </div>
         <div></div>
         <div>
-          <p className="text-lime-700 text-xl mt-4 font-semibold">
+          <p className="text-lime-700 text-xl mt-4 font-semibold mobile:text-lg">
             What you'll get
           </p>
           <div className="mt-2 flex items-center">
