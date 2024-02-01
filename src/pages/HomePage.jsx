@@ -19,7 +19,7 @@ const HomePage = () => {
           </div>
           <div className=" rounded-lg">
             <iframe
-              className="rounded-lg w-[560px] h-[315px] mobile:w-[350px] mobile:h-[180px] tablet:w-[450px] tablet:h-[220px] biggerTablet:w-[420px] biggerTablet:h-[230px]"
+              className="rounded-lg w-[560px] h-[315px] mobile:w-[290px] mobile:h-[160px] tablet:w-[450px] tablet:h-[220px] biggerTablet:w-[420px] biggerTablet:h-[230px]"
               src="https://www.youtube.com/embed/v7SN-d4qXx0?si=ExbqKreSfZJ7eIbX"
               title="YouTube video player"
               frameborder="0"
@@ -32,7 +32,7 @@ const HomePage = () => {
           <div>
             <p className="text-green-600 font-semibold mobile:text-sm">Is this for you?</p>
           </div>
-          <div className="flex justify-between mt-3 mobile:flex-col mobile:gap-14 tablet:flex-col tablet:gap-14 biggerTablet:flex-col biggerTablet:gap-14">
+          <div className="flex justify-between mt-3 mobile:flex-col mobile:gap-14 tablet:flex-col tablet:gap-10 biggerTablet:flex-col biggerTablet:gap-16">
             <div className="flex-col justify-center">
               <div className="text-center flex m-auto bg-gray-300 w-16 h-16 rounded-full  justify-center items-center">
                 <img
