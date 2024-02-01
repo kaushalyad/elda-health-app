@@ -32,7 +32,7 @@ const HomePage = () => {
           <div>
             <p className="text-green-600 font-semibold mobile:text-sm">Is this for you?</p>
           </div>
-          <div className="flex justify-between mt-3 mobile:flex-col mobile:gap-6 tablet:flex-col tablet:gap-10 biggerTablet:flex-col biggerTablet:gap-14">
+          <div className="flex justify-between mt-3 mobile:flex-col mobile:gap-10 tablet:flex-col tablet:gap-14 biggerTablet:flex-col biggerTablet:gap-14">
             <div className="flex-col justify-center">
               <div className="text-center flex m-auto bg-gray-300 w-16 h-16 rounded-full  justify-center items-center">
                 <img
