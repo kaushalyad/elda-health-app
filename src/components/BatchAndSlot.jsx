@@ -39,16 +39,16 @@ const BatchAndSlot = ({ actualPrice, discountedPrice, monthPlan }) => {
               {monthPlan} Month Yoga for Mind
             </p>
             <div>
-              <div className="flex text-green-600 font-semibold text-xl mobile:text-lg">
+              <div className="flex text-green-600 font-semibold text-xl mobile:text-lg mt-4">
                 <p>&#8377;</p>
                 <p>{discountedPrice}</p>
               </div>
-              <div className="flex line-through text-gray-400">
+            </div>
+          </div>
+          <div className="flex line-through text-gray-400 mobile:text-base justify-end">
                 <p>&#8377;</p>
                 <p>{actualPrice}</p>
               </div>
-            </div>
-          </div>
           <p className="mt-1">
             5 days a week{" "}
             <button
