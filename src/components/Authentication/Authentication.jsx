@@ -114,7 +114,10 @@ const Authentication = () => {
               <>
                 <div className=" w-[100%] h-1/2 mt-20  flex-col ">
                   <div className="h-[25%] text-center flex items-center justify-center">
-                    <p className="text-4xl font-bold mobile:text-2xl">Login to your account</p>
+                    <p className="text-4xl font-bold mobile:text-2xl">
+                      Login to your account
+                      <p className="text-[10px]">(Use mobile:+918797196867 & OTP:101219 if otp not send by firebase)</p>
+                    </p>
                   </div>
                   <div className="h-[25%] flex items-center justify-center mt-5 ">
                     <div>
@@ -128,7 +131,11 @@ const Authentication = () => {
                           background: "#f7fee7",
                         }}
                         containerStyle={{ margin: "20px" }}
-                        buttonStyle={{ height: "55px", background: "#f7fee7" }}
+                        buttonStyle={{
+                          height: "55px",
+                          background: "#f7fee7",
+                          onFocus	: { background: "#f7fee7" },
+                        }}
                         dropdownStyle={{ height: "500px" }}
                       />
                     </div>
