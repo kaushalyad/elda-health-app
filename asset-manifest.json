@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/elda-health-app/static/css/main.b1c2facb.css",
-    "main.js": "/elda-health-app/static/js/main.c5a45e7c.js",
+    "main.css": "/elda-health-app/static/css/main.96a601ac.css",
+    "main.js": "/elda-health-app/static/js/main.fc0b1c65.js",
     "static/js/787.5e42923c.chunk.js": "/elda-health-app/static/js/787.5e42923c.chunk.js",
     "static/media/slick.svg": "/elda-health-app/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/elda-health-app/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/elda-health-app/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/elda-health-app/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/elda-health-app/index.html",
-    "main.b1c2facb.css.map": "/elda-health-app/static/css/main.b1c2facb.css.map",
-    "main.c5a45e7c.js.map": "/elda-health-app/static/js/main.c5a45e7c.js.map",
+    "main.96a601ac.css.map": "/elda-health-app/static/css/main.96a601ac.css.map",
+    "main.fc0b1c65.js.map": "/elda-health-app/static/js/main.fc0b1c65.js.map",
     "787.5e42923c.chunk.js.map": "/elda-health-app/static/js/787.5e42923c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b1c2facb.css",
-    "static/js/main.c5a45e7c.js"
+    "static/css/main.96a601ac.css",
+    "static/js/main.fc0b1c65.js"
   ]
 }
