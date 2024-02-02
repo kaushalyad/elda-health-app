@@ -116,7 +116,10 @@ const Authentication = () => {
                   <div className="h-[25%] text-center flex items-center justify-center">
                     <p className="text-4xl font-bold mobile:text-2xl">
                       Login to your account
-                      <p className="text-[10px]">(Use mobile:+918797196867 & OTP:101219 if otp not send by firebase)</p>
+                      <p className="text-[10px]">
+                        (Use mobile:+918797196867 & OTP:101219 if otp not send
+                        by firebase)
+                      </p>
                     </p>
                   </div>
                   <div className="h-[25%] flex items-center justify-center mt-5 ">
@@ -130,11 +133,15 @@ const Authentication = () => {
                           height: "55px",
                           background: "#f7fee7",
                         }}
+                        enableSearch={true}
+                        disableSearchIcon={true}
                         containerStyle={{ margin: "20px" }}
                         buttonStyle={{
                           height: "55px",
                           background: "#f7fee7",
-                          onFocus	: { background: "#f7fee7" },
+                          onChange:{background: "black"},
+                          onFocus: { background: "black" },
+                          onClick:{background:"black"}
                         }}
                         dropdownStyle={{ height: "500px" }}
                       />
@@ -145,7 +152,7 @@ const Authentication = () => {
                       <div className="flex items-center mobile:items-start">
                         <input
                           type="checkbox"
-                          className="size-5 my-auto accent-red-400 hover:accent-red-500 mobile:size-4 mobile:my-2"
+                          className="size-5 my-auto accent-red-500 mobile:size-4 mobile:my-2 border-2 border-red-500 focus:bg-red-500 focus:accent-red-500"
                           onChange={(e) => {
                             setAccepted(e.target.checked);
                           }}
@@ -167,7 +174,7 @@ const Authentication = () => {
                   <div className="text-center flex justify-center mt-10">
                     <button
                       disabled={!accepted}
-                      className="bg-red-400 rounded-md px-5 py-2 text-white hover:bg-red-500 font-semibold flex text-xl text-center disabled:cursor-not-allowed disabled:opacity-25"
+                      className="bg-red-400 rounded-md px-3 py-2 text-white hover:bg-red-500 font-semibold flex text-xl text-center disabled:cursor-not-allowed disabled:text-gray-400 disabled:bg-gray-200"
                       onClick={onSignup}
                     >
                       <span className="w-6">
