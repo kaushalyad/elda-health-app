@@ -11,9 +11,13 @@ const PlanPicker = ({
     <div className="bg-white rounded-xl mt-3 py-2 px-2 shadow-green-500 border-[1px] border-green-500 ">
       <div className="flex justify-between">
         {timePeriod === 1 ? (
-          <p className="font-semibold text-xl mobile:text-lg">{timePeriod} Month</p>
+          <p className="font-semibold text-xl mobile:text-lg">
+            {timePeriod} Month
+          </p>
         ) : (
-          <p className="font-semibold text-xl mobile:text-lg">{timePeriod} Months</p>
+          <p className="font-semibold text-xl mobile:text-lg">
+            {timePeriod} Months
+          </p>
         )}
         <p className="text-sm  font-semibold text-gray-500 mobile:text-xs">
           {monthPrice}/month

@@ -1,12 +1,6 @@
 import React from "react";
 
 const SuccessMessage = ({ timePeriod }) => {
-  // const checkmarkStyle = {
-  //   color: "#9ABC66",
-  //   fontSize: "150px",
-  //   lineHeight: "200px",
-  //   marginLeft: "-15px",
-  // };
 
   return (
     <div className="bg-lime-50 h-screen flex items-center justify-center">

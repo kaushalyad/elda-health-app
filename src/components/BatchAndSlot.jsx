@@ -1,16 +1,27 @@
 import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
+import toast from "react-hot-toast";
 import SlotPicker from "./SlotPicker";
 import ItemSlider from "./DateSlider";
-const BatchAndSlot = ({ actualPrice, discountedPrice, monthPlan }) => {
+const BatchAndSlot = ({
+  actualPrice,
+  discountedPrice,
+  monthPlan,
+  componentType,
+}) => {
   const [selectedOne, setSelectedOne] = useState(false);
   const [selectedTwo, setSelectedTwo] = useState(false);
   const navigate = useNavigate();
+  const notify = () => {
+    toast.success("You successfully selected free yoga session!");
+  };
   return (
     <div className="flex-col bg-lime-50 p-10 mobile:p-5">
       <div className="flex-col">
         <div>
-          <p className="text-lime-700 text-xl font-semibold mobile:text-lg">Yoga for Mind</p>
+          <p className="text-lime-700 text-xl font-semibold mobile:text-lg">
+            Yoga for Mind
+          </p>
           <img
             src="/elda-health-app/mindyogapic.jpg"
             alt="yoga pic"
@@ -36,7 +47,9 @@ const BatchAndSlot = ({ actualPrice, discountedPrice, monthPlan }) => {
         <div>
           <div className="flex justify-between ">
             <p className="text-lime-700 text-xl mt-4 font-semibold mobile:text-lg">
-              {monthPlan} Month Yoga for Mind
+              {componentType === "buy"
+                ? `${monthPlan} Month Yoga for Mind `
+                : `Free Yoga Session for Mind`}
             </p>
             <div>
               <div className="flex text-green-600 font-semibold text-xl mobile:text-lg mt-4">
@@ -46,9 +59,9 @@ const BatchAndSlot = ({ actualPrice, discountedPrice, monthPlan }) => {
             </div>
           </div>
           <div className="flex line-through text-gray-400 mobile:text-base justify-end">
-                <p>&#8377;</p>
-                <p>{actualPrice}</p>
-              </div>
+            <p>&#8377;</p>
+            <p>{actualPrice}</p>
+          </div>
           <p className="mt-4">
             5 days a week{" "}
             <button
@@ -96,11 +109,20 @@ const BatchAndSlot = ({ actualPrice, discountedPrice, monthPlan }) => {
             isSelected={selectedTwo}
           ></SlotPicker>
         </form>
-        <NavLink to={"/products/"+discountedPrice+"/success"}>
-          <button className="bg-red-400 px-4 py-2 font-semibold rounded-full text-white ml-16 mt-3 hover:bg-red-500">
-            BUY PACKAGE
+        {componentType === "buy" ? (
+          <NavLink to={`/products/${discountedPrice}/success`}>
+            <button className="bg-red-400 px-4 py-2 font-semibold rounded-full text-white ml-16 mt-3 hover:bg-red-500">
+              BUY PACKAGE
+            </button>
+          </NavLink>
+        ) : (
+          <button
+            className="bg-red-400 px-4 py-2 font-semibold rounded-full text-white ml-16 mt-3 hover:bg-red-500"
+            onClick={notify}
+          >
+            SELECT PACKAGE
           </button>
-        </NavLink>
+        )}
       </div>
     </div>
   );
