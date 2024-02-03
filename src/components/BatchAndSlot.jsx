@@ -34,7 +34,7 @@ const BatchAndSlot = ({ actualPrice, discountedPrice, monthPlan }) => {
       </div>
       <div>
         <div>
-          <div className="flex justify-between">
+          <div className="flex justify-between ">
             <p className="text-lime-700 text-xl mt-4 font-semibold mobile:text-lg">
               {monthPlan} Month Yoga for Mind
             </p>
@@ -49,7 +49,7 @@ const BatchAndSlot = ({ actualPrice, discountedPrice, monthPlan }) => {
                 <p>&#8377;</p>
                 <p>{actualPrice}</p>
               </div>
-          <p className="mt-1">
+          <p className="mt-4">
             5 days a week{" "}
             <button
               className="text-red-400"
@@ -65,7 +65,7 @@ const BatchAndSlot = ({ actualPrice, discountedPrice, monthPlan }) => {
           <p className="text-lime-700 text-lg mt-3 font-semibold mobile:text-base">
             Pick a start date
           </p>
-          <p className=" mt-1 mb-6 mobile:text-sm">
+          <p className=" mt-1 mb-8 mobile:text-sm">
             Dates are available only for the next 2 weeks
           </p>
 
@@ -73,7 +73,7 @@ const BatchAndSlot = ({ actualPrice, discountedPrice, monthPlan }) => {
         </div>
       </div>
       <div>
-        <p className="text-lime-700 text-lg mt-3 font-semibold mobile:text-base">
+        <p className="text-lime-700 text-lg mt-5 font-semibold mobile:text-base">
           Select Time Slot
         </p>
         <form>

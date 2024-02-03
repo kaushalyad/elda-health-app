@@ -9,7 +9,7 @@ const HomePage = () => {
             <p className="text-green-600 text-xl font-semibold mobile:text-lg">
               Yoga for Mind
             </p>
-            <p className="mt-3 mobile:mt-1 mobile:mb-6 mobile:font-semibold mobile:text-sm tablet:mb-8 tablet:font-semibold tablet:text-sm">
+            <p className="mt-3 mobile:mt-1 mobile:mb-6 mobile:font-semibold mobile:text-xs tablet:mb-8 tablet:font-semibold tablet:text-sm">
               Watch Out Lead Yoga Therapist
               <a href="google.com" className="underline ml-1 text-red-500">
                 Ms Uma Subramaniam
