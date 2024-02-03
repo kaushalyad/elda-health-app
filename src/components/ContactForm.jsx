@@ -2,7 +2,6 @@ import React from "react";
 import toast from "react-hot-toast";
 const ContactForm = () => {
   const notify = () => toast.success("Message sent successfully!");
-
   return (
     <div>
       <section className="py-6 bg-white text-gray-800 mt-24 mb-24 ">
