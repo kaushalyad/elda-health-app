@@ -1,7 +1,6 @@
 import React from "react";
 
 const SuccessMessage = ({ timePeriod }) => {
-
   return (
     <div className="bg-lime-50 h-screen flex items-center justify-center">
       <div className="bg-white  rounded-lg shadow-md text-center mobile:w-[85%] mobile:px-12 mobile:pt-12 mobile:text-6xl mobile:font-bold tablet:w-[70%] tablet:p-12 p-12 w-[55%] mobile:p-2 ">
@@ -10,7 +9,9 @@ const SuccessMessage = ({ timePeriod }) => {
             ✓
           </i>
         </div>
-        <h1 className="text-[#9ABC66] font-bold text-4xl mb-2 mobile:text-2xl tablet:text-3xl">Success</h1>
+        <h1 className="text-[#9ABC66] font-bold text-4xl mb-2 mobile:text-2xl tablet:text-3xl">
+          Success
+        </h1>
         <p className="text-gray-700 mobile:text-sm tablet:text-large">
           <span className="font-semibold ">
             Congratulations on purchasing
