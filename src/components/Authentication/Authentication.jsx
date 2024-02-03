@@ -139,26 +139,26 @@ const Authentication = () => {
                         buttonStyle={{
                           height: "55px",
                           background: "#f7fee7",
-                          onChange:{background: "black"},
+                          onChange: { background: "black" },
                           onFocus: { background: "black" },
-                          onClick:{background:"black"}
+                          onClick: { background: "black" },
                         }}
                         dropdownStyle={{ height: "500px" }}
                       />
                     </div>
                   </div>
                   <div className="h-[25%] flex items-center justify-center mobile:items-start">
-                    <div className="flex mt-4 ">
-                      <div className="flex items-center mobile:items-start">
+                    <div className="flex mt-4  ">
+                      <div className="flex items-center mobile:items-start ">
                         <input
                           type="checkbox"
-                          className="size-5 my-auto accent-red-500 mobile:size-4 mobile:my-2 border-2 border-red-500 focus:bg-red-500 focus:accent-red-500"
+                          className="size-4  my-auto accent-red-500 mobile:size-4 mobile:my-2 border-2 border-red-500 focus:bg-red-500 focus:accent-red-500"
                           onChange={(e) => {
                             setAccepted(e.target.checked);
                           }}
-                        ></input>
+                        />
                       </div>
-                      <div className="mobile:text-sm ml-10 mobile:ml-4">
+                      <div className="mobile:text-sm ml-6 mobile:ml-4">
                         <span className="">I agree with the</span>{" "}
                         <span className="ml-1 text-red-400">
                           Terms & Conditions{" "}
