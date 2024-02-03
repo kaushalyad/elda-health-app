@@ -47,9 +47,12 @@ const BatchAndSlot = ({
         <div>
           <div className="flex justify-between ">
             <p className="text-lime-700 text-xl mt-4 font-semibold mobile:text-lg">
-              {componentType === "buy"
-                ? `${monthPlan} Month Yoga for Mind `
-                : `Free Yoga Session for Mind`}
+              {componentType === "buy" ? (
+                `${monthPlan} Month Yoga for Mind `
+              ) : (
+                <span className="text-red-400">Free </span>
+              )}{" "}
+              Yoga Session for Mind
             </p>
             <div>
               <div className="flex text-green-600 font-semibold text-xl mobile:text-lg mt-4">
@@ -64,14 +67,18 @@ const BatchAndSlot = ({
           </div>
           <p className="mt-4">
             5 days a week{" "}
-            <button
-              className="text-red-400"
-              onClick={() => {
-                navigate(-1);
-              }}
-            >
-              Change plan
-            </button>
+            {componentType === "buy" ? (
+              <button
+                className="text-red-400"
+                onClick={() => {
+                  navigate(-1);
+                }}
+              >
+                Change plan
+              </button>
+            ) : (
+              ""
+            )}
           </p>
         </div>
         <div>
@@ -120,7 +127,7 @@ const BatchAndSlot = ({
             className="bg-red-400 px-4 py-2 font-semibold rounded-full text-white ml-16 mt-3 hover:bg-red-500"
             onClick={notify}
           >
-            SELECT PACKAGE
+            SELECT SESSION
           </button>
         )}
       </div>
