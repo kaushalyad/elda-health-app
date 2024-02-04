@@ -10,7 +10,7 @@ const HomePage = () => {
           </p>
           <p className="mt-3 mobile:mt-1 mobile:mb-6 mobile:font-semibold mobile:text-xs tablet:mb-8 tablet:font-semibold tablet:text-sm">
             Watch Out Lead Yoga Therapist
-            <a href="google.com" className="underline ml-1 text-red-500">
+            <a href="https://www.eldahealth.com/experts/uma-subramaniam" className="underline ml-1 text-red-500">
               Ms Uma Subramaniam
             </a>{" "}
             explain Yoga for Mind{" "}
