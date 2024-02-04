@@ -95,6 +95,7 @@ const Authentication = () => {
                     otpType="number"
                     disabled={false}
                     autoFocus
+                    inputStyles	={{width:"50px",height:"50px",backgroundColor:"#16a34a",color:"white",fontWeight:"bold"}}
                     className="opt-container mt-10"
                   ></OtpInput>
                 </div>
