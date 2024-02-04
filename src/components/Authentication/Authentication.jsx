@@ -44,7 +44,7 @@ const Authentication = () => {
         window.confirmationResult = confirmationResult;
         setLoading(false);
         setShowOTP(true);
-        toast.success("OTP sended successfully!");
+        toast.success("OTP sended successfully!", { toastId: "success1" });
       })
       .catch((error) => {
         console.log(error);
