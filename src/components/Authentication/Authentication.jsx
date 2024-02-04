@@ -48,6 +48,7 @@ const Authentication = () => {
       })
       .catch((error) => {
         console.log(error);
+        toast.error("Please enter a valid mobile number");
         setLoading(false);
       });
   }
@@ -63,6 +64,7 @@ const Authentication = () => {
       })
       .catch((err) => {
         console.log(err);
+        toast.error("Wrong OTP entered");
         setLoading(false);
       });
   }
@@ -95,7 +97,13 @@ const Authentication = () => {
                     otpType="number"
                     disabled={false}
                     autoFocus
-                    inputStyles	={{width:"50px",height:"50px",backgroundColor:"#16a34a",color:"white",fontWeight:"bold"}}
+                    inputStyles={{
+                      width: "50px",
+                      height: "50px",
+                      backgroundColor: "#16a34a",
+                      color: "white",
+                      fontWeight: "bold",
+                    }}
                     className="opt-container mt-10"
                   ></OtpInput>
                 </div>
