@@ -98,7 +98,7 @@ const Authentication = () => {
                     disabled={false}
                     autoFocus
                     inputStyles={{
-                      width: "50px",
+                      width: "45px",
                       height: "50px",
                       backgroundColor: "#16a34a",
                       color: "white",
