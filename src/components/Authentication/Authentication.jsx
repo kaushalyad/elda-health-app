@@ -140,6 +140,8 @@ const Authentication = () => {
                         inputStyle={{
                           color: "black",
                           height: "55px",
+                          fontWeight:"bold",
+                          color:"green",
                           background: "#f7fee7",
                         }}
                         enableSearch={true}
